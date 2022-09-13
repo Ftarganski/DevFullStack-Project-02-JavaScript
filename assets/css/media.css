@@ -1,0 +1,113 @@
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {}
+
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .img-carousel {
+        height: calc(75vh);
+    }
+
+    .nav>ul>li>a,
+    .nav>ul>li>a:visited {
+        border: none;
+        font-size: 80%;
+    }
+
+    .nav>ul>li>a:hover,
+    .nav>ul>li>a:active {
+        border: none;
+    }
+}
+
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .abertura-img {
+        width: calc(100vw);
+        height: calc(var(--width))!important;
+        }
+
+    .abertura>div{
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .row-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-logo {
+        width: 100%;
+    }
+
+    .img-logo-nav {
+        width: 20%;
+        padding: 1% 0;
+    }
+
+    .nav-menu {
+        width: 100%;
+    }
+
+    .nav>ul {
+        padding: 0;
+        justify-content: space-evenly;
+    }
+
+    .nav>ul>li {
+        margin: 0 1%;
+        /* padding: 0 1%; */
+        box-sizing: border-box!important;
+    }
+    
+    .nav-login{
+        display: none;
+    }
+
+    .slide>div>ul>li {
+        width: 100% !important;
+    }
+
+    .img-carousel {
+        height: calc(50vh);
+    }
+
+    .redes>a {
+        margin: 0 5%;
+        box-sizing: border-box;
+    }
+}
+
+/* .slide>div>ul>li:nth-child(2), .slide>div>ul>li:nth-child(3) {
+        display: none!important;
+} */
+
+
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  
+   
+   
+    .redes {
+        display: block;
+        width: 100%;
+        padding: 2% 0;
+        box-sizing: border-box;
+    }
+
+    .foot-menu,
+    .foot-logo,
+    .nav-login {
+        display: none;
+    }
+
+    .redes>a {
+        padding: 0 5%;
+        margin: 0;
+        height: 100%;
+        box-sizing: border-box;
+    }
+}

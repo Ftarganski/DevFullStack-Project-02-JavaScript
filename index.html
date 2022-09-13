@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedal Floripa MTB</title>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/ef99a196d2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,300,0,0" />
+    <!-- <link rel="stylesheet" href="./assets/libs/animate/animate.min.css"/> -->
+    <link rel="stylesheet" href="./assets/libs/bootstrap/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
+
+</head>
+
+<body class="bg.dark">
+    <div class="abertura">
+        <div><span><img class="abertura-img" src="./assets/img/logo-branco.png" alt="Pedal Floripa MTB"></span></div>
+    </div>
+    <div>
+        <header class="container-fluid header">
+            <div class="container text-center">
+                <div class="row row-nav">
+                    <div class="col-2 nav-logo">
+                        <span><a href="#home-lk"><img class="img-logo-nav" src="./assets/img/logo-branco.png"
+                                    alt="Logotipo Pedal Floripa MTB"></a></span>
+                    </div>
+                    <div class="col-8 nav-menu">
+                        <nav class="nav">
+                            <ul>
+                                <li><a href="#home-lk">Home</a></li>
+                                <li><a href="#marcas-lk">Marcas</a></li>
+                                <li><a href="#bicicletas-lk">Bicicletas</a></li>
+                                <li><a href="#competicoes-lk">Competições</a></li>
+                                <li><a href="#atletas-lk">Atletas</a></li>
+                                <li><a href="#equipamentos-lk">Equipamentos</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-2 nav-login">
+                        <span><a href="https://www.uci.org" target="_blank"><img class="img-uci"
+                                    src="./assets/img/logo-uci.png" alt="Logotipo da UCI"></a></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="home-lk" class="container-fluid sct-carousel">
+            <div id="carouselcapa" class="carousel slide carousel-fade" data-bs-ride="false">
+                <div class="carousel-indicators button-mood">
+                    <button type="button" data-bs-target="#carouselcapa" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselcapa" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselcapa" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner carousel-inner-mood">
+                    <div class="carousel-item active">
+                        <div class='img-carousel img-carousel--1'></div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="title-slide">Viva esta aventura</h5>
+                            <p class="p-slide">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class='img-carousel img-carousel--2'></div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="title-slide">Bicicletas para todos</h5>
+                            <p class="p-slide">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class='img-carousel img-carousel--3'></div>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="title-slide">Um esporte completo para você</h5>
+                            <p class="p-slide">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <main class="container-fluid col-10">
+
+            <section id="marcas-lk">
+                <div>
+                    <h4 class="h4 animate__animated animate__fadeInRightBig">Marcas</h4>
+                </div>
+                <div id="marcas" class="carousel slide carousel-mod" data-interval="false">
+                    <div class="carousel-inner">
+                        <ul class="carousel-item active">
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalmarcas"
+                                    href=""><span><img class="img-marca" src="./assets/img/marcas/bianchi.jpg"
+                                            alt="Biachi Bikes"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalmarcas"
+                                    href=""><span><img class="img-marca" src="./assets/img/marcas/bmc.jpg"
+                                            alt="BMC Switzerlan"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalmarcas"
+                                    href=""><span><img class="img-marca" src="./assets/img/marcas/cannondale.jpg"
+                                            alt="Cannondale"></span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="carousel-item">
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalmarcas"
+                                    href=""><span><img class="img-marca" src="./assets/img/marcas/cervelo.jpg"
+                                            alt="Cervélo"></span>
+                                </a>
+                            </li>
+                            <li><a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalmarcas"
+                                    href=""><span><img class="img-marca" src="./assets/img/marcas/colnago.jpg"
+                                            alt="Colnago"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalmarcas"
+                                    href=""><span><img class="img-marca" src="./assets/img/marcas/merida.jpg"
+                                            alt="Merida"></span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="carousel-item">
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalmarcas"
+                                    href=""><span><img class="img-marca" src="./assets/img/marcas/orbea.jpg"
+                                            alt="Orbea"></span>
+                                </a>
+                            </li>
+                            <li>
+
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalmarcas"
+                                    href=""><span><img class="img-marca" src="./assets/img/marcas/raleigh.jpg"
+                                            alt="Raleigh"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalmarcas"
+                                    href=""><span><img class="img-marca" src="./assets/img/marcas/trek.jpg"
+                                            alt="Trek"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="carousel-control-prev carousel-mod-prev" type="button" data-bs-target="#marcas"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon icone" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next carousel-mod-next" type="button" data-bs-target="#marcas"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon icone" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <!-- Modal Marcas -->
+                <div class="modal fade" id="Modalmarcas" tabindex="-1" role="dialog" aria-labelledby="Modalmarcas"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header modal-header-mood ">
+                                <div class="col-12">
+                                    <img class="img-mod" src="./assets/img/marcas/bmc.jpg" alt="BMC Switzerlan">
+                                </div>
+                            </div>
+                            <div class="modal-body modal-body-marcas-mood">
+                                <div class="col-12">
+                                    <h4>BMC Switzerlan</h4>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc libero,
+                                        tristique
+                                        in enim nec, suscipit aliquet velit. Nam leo nisl, hendrerit nec metus eu,
+                                        varius
+                                        vulputate orci. Nullam sit amet felis sit amet arcu luctus porttitor eget eu
+                                        nisl.
+                                        Curabitur facilisis eros porttitor sem blandit, non placerat diam rutrum.
+                                        Integer
+                                        suscipit maximus molestie. Nunc ultrices metus sed metus euismod, eu rutrum
+                                        nulla
+                                        congue. Fusce non dignissim tellus. Morbi suscipit aliquet justo, ut rhoncus
+                                        lectus.
+                                        Nam scelerisque quam non egestas blandit. Vestibulum rutrum id mi eu accumsan.
+                                        Vestibulum gravida varius tortor sed varius. Ut ut leo arcu.
+                                    </p>
+                                    <p>Morbi et diam leo. Donec a tellus ac urna ultricies lacinia et ut ipsum. Integer
+                                        erat ante, dictum non erat non, condimentum tincidunt nisl. Donec nec nisl at mi
+                                        dapibus vestibulum id vitae metus. Nam commodo ac sapien quis feugiat. Fusce ut
+                                        libero mauris. Aenean purus erat, congue a nibh ac, facilisis hendrerit odio.
+                                    </p>
+                                    <ul>
+                                        <li><i class="fa-solid fa-person"></i></li>
+                                        <li>Fundador: Bob Bigelow</li>
+                                        <li><i class="fa-solid fa-calendar-check"></i></li>
+                                        <li>Ano de Fundação: 1986</li>
+                                        <li><i class="fa-solid fa-location-dot"></i></li>
+                                        <li>Local: Grenchen, Suíça</li>
+                                        <li><i class="fa-solid fa-bicycle"></i></li>
+                                        <li>Especialidade: Road Bikes</li>
+                                        <li><i class="fa-solid fa-people-group"></i></li>
+                                        <li>Equipe Patrocinada: BMC Racing Team</li>
+                                        <li><i class="fa-solid fa-globe"></i></li>
+                                        <li>Site: <a href="https://www.bmc-switzerland.com/"
+                                                target="_blank">bmc-switzerland.com </a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="modal-footer modal-footer-mood">
+                                <div class="col-9">
+                                    <a href="https://www.strava.com/" target="_blank"><i
+                                            class="fa-brands fa-strava"></i></a>
+                                    <a href="https://www.instagram.com" target="_blank"><i
+                                            class="fa-brands fa-instagram"></i></a>
+                                    <a href="https://twitter.com" target="_blank"><i
+                                            class="fa-brands fa-twitter"></i></a>
+                                    <a href="https://www.facebook.com" target="_blank"><i
+                                            class="fa-brands fa-facebook-f"></i></a>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn btn-mod" data-bs-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="bicicletas-lk">
+                <div>
+                    <h4 class="h4 animate__animated animate__fadeInRightBig">Bicicletas</h4>
+                </div>
+                <div id="bicicletas" class="carousel slide" data-interval="false">
+                    <div class="carousel-inner">
+                        <ul class="carousel-item active">
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalbike"
+                                    href=""><span><img class="img-bike" src="./assets/img/bicicletas/bike-001.jpg"
+                                            alt="Bicicleta 001"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalbike"
+                                    href=""><span><img class="img-bike" src="./assets/img/bicicletas/bike-002.jpg"
+                                            alt="Bicicleta 002"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalbike"
+                                    href=""><span><img class="img-bike" src="./assets/img/bicicletas/bike-003.jpg"
+                                            alt="Bicicleta 003"></span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="carousel-item">
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalbike"
+                                    href=""><span><img class="img-bike" src="./assets/img/bicicletas/bike-004.jpg"
+                                            alt="Bicicleta 004"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalbike"
+                                    href=""><span><img class="img-bike" src="./assets/img/bicicletas/bike-005.jpg"
+                                            alt="Bicicleta 005"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalbike"
+                                    href=""><span><img class="img-bike" src="./assets/img/bicicletas/bike-006.jpg"
+                                            alt="Bicicleta 006"></span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="carousel-item">
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalbike"
+                                    href=""><span><img class="img-bike" src="./assets/img/bicicletas/bike-007.jpg"
+                                            alt="Bicicleta 007"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalbike"
+                                    href=""><span><img class="img-bike" src="./assets/img/bicicletas/bike-008.jpg"
+                                            alt="Bicicleta 008"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalbike"
+                                    href=""><span><img class="img-bike" src="./assets/img/bicicletas/bike-009.jpg"
+                                            alt="Bicicleta 009"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="carousel-control-prev carousel-mod-prev" type="button" data-bs-target="#bicicletas"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon icone" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next carousel-mod-next" type="button" data-bs-target="#bicicletas"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon icone" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <!-- Modal Bikes -->
+                <div class="modal fade" id="Modalbike" tabindex="-1" role="dialog" aria-labelledby="Modalbike"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header modal-header-mood ">
+                                <h4><i class="fa-solid fa-bicycle"></i> Modelo</h4>
+                            </div>
+                            <div class="modal-body modal-body-bike-mood">
+                                <div class="col-12">
+                                    <img class="img-mod" src="./assets/img/bicicletas/bike-005.jpg" alt="Bicicleta 005">
+                                </div>
+                                <div class="col-12">
+                                    <ul>
+                                        <li><i class="fa-solid fa-bicycle"></i></li>
+                                        <li>Categoria: Road Bike</li>
+                                        <li><i class="fa-solid fa-industry"></i></li>
+                                        <li>Fabricante: Colnago</li>
+                                        <li><i class="fa-solid fa-gear"></i></li>
+                                        <li>Especificações</li>
+                                        <li>Quadro: Carbono</li>
+                                        <li>Garfo: RockShox Recon</li>
+                                        <li>Relação: Shimano SLX M7100, 12 v</li>
+                                        <li>Pneu: Bontrager XR2 Team 29x2.40</li>
+                                        <li>Freio: Disco 180mm Hidráulico</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="modal-footer modal-footer-mood">
+                                <div class="col-9">
+                                    <a href="https://www.strava.com/" target="_blank"><i
+                                            class="fa-brands fa-strava"></i></a>
+                                    <a href="https://www.instagram.com" target="_blank"><i
+                                            class="fa-brands fa-instagram"></i></a>
+                                    <a href="https://twitter.com" target="_blank"><i
+                                            class="fa-brands fa-twitter"></i></a>
+                                    <a href="https://www.facebook.com" target="_blank"><i
+                                            class="fa-brands fa-facebook-f"></i></a>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn btn-mod" data-bs-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="competicoes-lk">
+                <div>
+                    <h4 class="h4 animate__animated  animate__fadeInRightBig">Competições</h4>
+                </div>
+                <div id="competicoes" class="carousel slide" data-interval="false">
+                    <div class="carousel-inner">
+                        <ul class="carousel-item active">
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalcompet"
+                                    href=""><span><img class="img-compet"
+                                            src="./assets/img/competicoes/tour-de-france.jpg"
+                                            alt="Tour de France"></span>
+                                    <h4 class="h4compet">Tour de France</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalcompet"
+                                    href=""><span><img class="img-compet" src="./assets/img/competicoes/giro-italia.jpg"
+                                            alt="Giro D´Italia"></span>
+                                    <h4 class="h4compet">Giro D´Italia</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalcompet"
+                                    href=""><span><img class="img-compet" src="./assets/img/competicoes/la-vuelta.jpg"
+                                            alt="La Vuelta"></span>
+                                    <h4 class="h4compet">La Vuelta</h4>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="carousel-item">
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalcompet"
+                                    href=""><span><img class="img-compet"
+                                            src="./assets/img/competicoes/uci-mtb-jersey.jpg"
+                                            alt="World Cup MTB"></span>
+                                    <h4 class="h4compet">World Cup MTB</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalcompet"
+                                    href=""><span><img class="img-compet"
+                                            src="./assets/img/competicoes/volta-portugal.jpg"
+                                            alt="Volta a Portugal"></span>
+                                    <h4 class="h4compet">Volta a Portugal</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalcompet"
+                                    href=""><span><img class="img-compet"
+                                            src="./assets/img/competicoes/deutshland-tour.jpg"
+                                            alt="Deutshland Tour"></span>
+                                    <h4 class="h4compet">Deutshland Tour</h4>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <button class="carousel-control-prev carousel-mod-prev" type="button" data-bs-target="#competicoes"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon icone" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next carousel-mod-next" type="button" data-bs-target="#competicoes"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon icone" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <!-- Modal Competições -->
+                <div class="modal fade" id="Modalcompet" tabindex="-1" role="dialog" aria-labelledby="Modalcompet"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header modal-header-mood ">
+                                <h4><i class="fa-solid fa-trophy"></i> Competição</h4>
+                                <h5><i class="fa-solid fa-map-location"></i> Local</h5>
+                            </div>
+                            <div class="modal-body">
+                                <div class="col-4">
+                                    <img class="img-mod" src="./assets/img/competicoes/tour-de-france.jpg"
+                                        alt="Tour de France">
+                                    <h6>Jersey do Campeão</h6>
+                                </div>
+                                <div class="col-8">
+                                    <ul>
+                                        <li><i class="fa-solid fa-bicycle"></i></li>
+                                        <li>Categoria: Road Bike</li>
+                                        <li><i class="fa-solid fa-medal"></i></li>
+                                        <li>Edições Realizadas: 110</li>
+                                        <li><i class="fa-solid fa-trophy"></i></li>
+                                        <li>Quantidade de Etapas: 21</li>
+                                        <li><i class="fa-solid fa-map"></i></li>
+                                        <li> <a href="./assets/img/competicoes/tour-de-france-map.jpg" target="_blank">
+                                                <img src="./assets/img/competicoes/tour-de-france-map.jpg"
+                                                    alt="Map Tour de France"></a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="modal-footer modal-footer-mood">
+                                <div class="col-9">
+                                    <a href="https://www.strava.com/" target="_blank"><i
+                                            class="fa-brands fa-strava"></i></a>
+                                    <a href="https://www.instagram.com" target="_blank"><i
+                                            class="fa-brands fa-instagram"></i></a>
+                                    <a href="https://twitter.com" target="_blank"><i
+                                            class="fa-brands fa-twitter"></i></a>
+                                    <a href="https://www.facebook.com" target="_blank"><i
+                                            class="fa-brands fa-facebook-f"></i></a>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn btn-mod" data-bs-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="atletas-lk">
+                <div>
+                    <h4 class="h4 animate__animated animate__fadeInRightBig">Atletas</h4>
+                </div>
+                <div id="atletas" class="carousel slide" data-interval="false">
+                    <div class="carousel-inner">
+                        <ul class="carousel-item active">
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalatletas"
+                                    href=""><span><img class="img-atlet" src="./assets/img/atletas/c-laporte.png"
+                                            alt="C. Laporte"></span>
+                                    <h4>C. Laporte</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalatletas"
+                                    href=""><span><img class="img-atlet" src="./assets/img/atletas/d-groenewegen.png"
+                                            alt="D. Groenawegen"></span>
+                                    <h4>D. Groenawegen</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalatletas"
+                                    href=""><span><img class="img-atlet" src="./assets/img/atletas/h-houle.png"
+                                            alt="H. Houle"></span>
+                                    <h4>H. Houle</h4>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="carousel-item">
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalatletas"
+                                    href=""><span><img class="img-atlet" src="./assets/img/atletas/j-philipsen.png"
+                                            alt="J. Philipsen"></span>
+                                    <h4>J. Philipsen</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalatletas"
+                                    href=""><span><img class="img-atlet" src="./assets/img/atletas/j-vingegaard.png"
+                                            alt="J. Vingegaard"></span>
+                                    <h4>J. Vingegaard</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalatletas"
+                                    href=""><span><img class="img-atlet" src="./assets/img/atletas/m-matthews.png"
+                                            alt="M. Matthews"></span>
+                                    <h4>M. Matthews</h4>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="carousel-item">
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalatletas"
+                                    href=""><span><img class="img-atlet" src="./assets/img/atletas/t-pogacar.png"
+                                            alt="T. Pogacar"></span>
+                                    <h4>T. Pogacar</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalatletas"
+                                    href=""><span><img class="img-atlet" src="./assets/img/atletas/w-van-aert.png"
+                                            alt="W. Van Aert"></span>
+                                    <h4>W. Van Aert</h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalatletas"
+                                    href=""><span><img class="img-atlet" src="./assets/img/atletas/y-lampaert.png"
+                                            alt="Y. Lampert"></span>
+                                    <h4>Y. Lampert</h4>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="carousel-control-prev carousel-mod-prev" type="button" data-bs-target="#atletas"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon icone" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next carousel-mod-next" type="button" data-bs-target="#atletas"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon icone" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <!-- Modal Atletas -->
+                <div class="modal fade" id="Modalatletas" tabindex="-1" role="dialog" aria-labelledby="Modalatletas"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content modal-content-mood">
+                            <div class="modal-header modal-header-mood ">
+                                <h4><i class="fa-solid fa-person-biking"></i> Atleta</h4>
+                                <h5><i class="fa-solid fa-people-group"></i> Equipe</h5>
+                            </div>
+                            <div class="modal-body">
+                                <div class="col-4">
+                                    <img class="img-mod" src="./assets/img/atletas/c-laporte.png" alt="C. Laporte">
+                                </div>
+                                <div class="col-8">
+                                    <ul>
+                                        <li><i class="fa-solid fa-bicycle"></i></li>
+                                        <li>Categoria: Road Bike</li>
+                                        <li><i class="fa-solid fa-medal"></i></li>
+                                        <li>Principal Competição: Tour de France</li>
+                                        <li><i class="fa-solid fa-trophy"></i></li>
+                                        <li>Vitórias: 21</li>
+                                        <li><i class="fa-solid fa-ranking-star"></i>
+                                        <li>Pódios: 49</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="modal-footer modal-footer-mood">
+                                <div class="col-9">
+                                    <a href="https://www.strava.com/" target="_blank"><i
+                                            class="fa-brands fa-strava"></i></a>
+                                    <a href="https://www.instagram.com" target="_blank"><i
+                                            class="fa-brands fa-instagram"></i></a>
+                                    <a href="https://twitter.com" target="_blank"><i
+                                            class="fa-brands fa-twitter"></i></a>
+                                    <a href="https://www.facebook.com" target="_blank"><i
+                                            class="fa-brands fa-facebook-f"></i></a>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn btn-mod" data-bs-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="equipamentos-lk">
+                <div>
+                    <h4 class="h4 animate__animated animate__fadeInRightBig">Equipamentos</h4>
+                </div>
+                <div id="equipamentos" class="carousel slide" data-interval="false">
+                    <div class="carousel-inner">
+                        <ul class="carousel-item active">
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#ModalEquip"
+                                    href=""><span><img class="img-equip" src="./assets/img/equipamentos/pedal.jpeg"
+                                            alt="Pedal"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#ModalEquip"
+                                    href=""><span><img class="img-equip" src="./assets/img/equipamentos/sapatilha.jpeg"
+                                            alt="Sapatilha"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#ModalEquip"
+                                    href=""><span><img class="img-equip" src="./assets/img/equipamentos/óculos.jpg"
+                                            alt="Óculos"></span>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="carousel-item">
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#ModalEquip"
+                                    href=""><span><img class="img-equip" src="./assets/img/equipamentos/capacete.jpg"
+                                            alt="Capacete"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#ModalEquip"
+                                    href=""><span><img class="img-equip"
+                                            src="./assets/img/equipamentos/ciclocomputador.jpg"
+                                            alt="Ciclocomputador"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#ModalEquip"
+                                    href=""><span><img class="img-equip" src="./assets/img/equipamentos/mochila.jpg"
+                                            alt="Mochila de Hidratação"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="carousel-control-prev carousel-mod-prev" type="button" data-bs-target="#equipamentos"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon icone" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next carousel-mod-next" type="button" data-bs-target="#equipamentos"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon icone" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <!-- Modal Equipamentos -->
+                <div class="modal fade" id="ModalEquip" tabindex="-1" role="dialog" aria-labelledby="ModalEquip"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header modal-header-mood ">
+                                <h4><i class="fa-solid fa-gears"></i> Equipamento</h4>
+                            </div>
+                            <div class="modal-body modal-body-equip-mood">
+                                <div class="col-12">
+                                    <img class="img-mod" src="./assets/img/equipamentos/sapatilha.jpeg" alt="Sapatilha">
+                                </div>
+                                <div class="col-12">
+                                    <ul>
+                                        <li><i class="fa-solid fa-bicycle"></i></li>
+                                        <li>Categoria: MTB</li>
+                                        <li><i class="fa-solid fa-industry"></i></li>
+                                        <li>Fabricante: Colnago</li>
+                                        <li><i class="fa-solid fa-gear"></i></li>
+                                        <li>Especificações</li>
+                                        <li>Modelo: SH-RX800</li>
+                                        <li>Cor: Bronze, Prateado, Preto</li>
+                                        <li>Taco: SPD</li>
+                                        <li>Pedal: PD-M9100</li>
+                                        <li>Solado: Composto de fibra de carbono + TPU</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="modal-footer modal-footer-mood">
+                                <div class="col-9">
+                                    <a href="https://www.strava.com/" target="_blank"><i
+                                            class="fa-brands fa-strava"></i></a>
+                                    <a href="https://www.instagram.com" target="_blank"><i
+                                            class="fa-brands fa-instagram"></i></a>
+                                    <a href="https://twitter.com" target="_blank"><i
+                                            class="fa-brands fa-twitter"></i></a>
+                                    <a href="https://www.facebook.com" target="_blank"><i
+                                            class="fa-brands fa-facebook-f"></i></a>
+                                </div>
+                                <div class="col-3">
+                                    <button type="button" class="btn btn-mod" data-bs-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="container-fluid footer">
+            <div class="container text-center">
+                <div class="row row-mod">
+                    <div class="col-6 foot-menu">
+                        <nav class="foot-nav">
+                            <ul>
+                                <li><a href="#home-lk">Home</a></li>
+                                <li><a href="#marcas-lk">Marcas</a></li>
+                                <li><a href="#bicicletas-lk">Bicicletas</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#competicoes-lk">Competições</a></li>
+                                <li><a href="#atletas-lk">Atletas</a></li>
+                                <li><a href="#equipamentos-lk">Equipamentos</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-3 redes">
+                        <a href="https://www.strava.com/athletes/80187448" target="_blank"><i
+                                class="fa-brands fa-strava"></i></a>
+                        <a href="https://www.instagram.com/ftarganski" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/c/PedalFloripaMTB?sub_confirmation=1" target="_blank"><i
+                                class="fa-brands fa-youtube"></i></a>
+                        <a href="https://twitter.com/ftarganski" target="_blank"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/ftarganski" target="_blank"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                    <div class="col-3 foot-logo">
+                        <span><img class="img-footer" src="./assets/img/logo-branco.png"
+                                alt="Logotipo Pedal Floripa MTB"></span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./assets/libs/bootstrap/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

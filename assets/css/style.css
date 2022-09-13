@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+@import url('header.css');
+@import url('main.css');
+@import url('footer.css');
+@import url('media.css');
+
+::-webkit-scrollbar {
+    width: 20px;
+    background-color: rgb(200, 200, 200);
+}
+
+::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 5px black; */
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(120, 120, 120);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(120, 120, 120);
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.abertura {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    z-index: 999;
+}
+
+.abertura>div {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.abertura>div>span {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* height: 100%; */
+    text-align: center;
+}
+
+.abertura-img {
+    margin: 0;
+    padding: 0;
+    height: calc(100vh);
+    animation: abertura 3s normal forwards ease-in-out;
+}
+
+@keyframes abertura {
+    0% {
+        opacity: 0;
+        transform: rotate(0deg)
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(1080deg)
+    }
+}
