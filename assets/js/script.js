@@ -5,3 +5,10 @@ setTimeout(function () {
   }
 }, 4000);
 
+
+$('.carouselSlick').slick({
+  dots: true,
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 2,
+});
