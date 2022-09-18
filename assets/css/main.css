@@ -260,9 +260,33 @@
   text-align: justify;
 }
 
-.img-slick{
+.carouselMarcasSlick{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.imgSlickMarcas{
   width: 100%;
   margin: 0;
   padding: 0 5%;
   box-sizing: border-box;
 }
+
+.carouselCompets{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.imgSlickCompets{
+  width: 100%;
+  margin: 0;
+  padding: 0 5%;
+  box-sizing: border-box;
+  }
+
+  .carouselCompets>span:hover, .carouselMarcasSlick>span:hover {
+    transform: scale(1.025);
+    transition: all 0.5s ease-out;
+  }

@@ -2,18 +2,18 @@
 ok - O aluno adicionou ao menos 1 array ou 1 objeto JSON dentro do projeto?
 ok - O aluno adicionou ao menos um tipo de laço de repetição no site?
 ok - O aluno adicionou estrutura condicional no site?
-- O aluno adicionou ao menos um evento no site?
+ok - O aluno adicionou ao menos um evento no site?
 - O aluno criou ao menos 1 classes no projeto?
 - O aluno adicionou ao menos 1 método na classe criada?
 - O aluno adicionou ao menos 1 atributo na classe criada?
 - O aluno instanciou ao menos 2 vezes 1 das classes dentro do projeto?
-- O aluno configurou a biblioteca slick slider dentro do projeto?
+ok - O aluno configurou a biblioteca slick slider dentro do projeto?
 ok - O aluno adicionou 1 carrossel normal dentro do projeto?
 ok - O aluno adicionou 1 carrossel responsivo no projeto?
 ok - O aluno adicionou 1 carrossel dinâmico ao projeto?
 ok - O aluno adicionou 1 modal dinâmico ao projeto?
 - O aluno adicionou 1 popover dinâmico ao projeto?
-- O aluno adicionou 1 spinner de carregamento ao projeto?
+ok - O aluno adicionou 1 spinner de carregamento ao projeto?
 - O aluno adicionou placeholders ao carregamento dos conteúdos?
 -->
 
@@ -37,14 +37,11 @@ ok - O aluno adicionou 1 modal dinâmico ao projeto?
     />
     <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="./assets/libs/slick/slick-theme.css" type="text/css" />
-    <link rel="stylesheet" href="./assets/libs/slick/slick.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="./assets/libs/slick/slick-theme.css" type="text/css" /> -->
+    <!-- <link rel="stylesheet" href="./assets/libs/slick/slick.css" type="text/css" /> -->
   </head>
 
-
-
   <body class="bg.dark">
-
     <!-- <div class="abertura">
         <div><span><img class="abertura-img" src="./assets/img/logo-branco.png" alt="Pedal Floripa MTB"></span></div>
     </div> -->
@@ -75,7 +72,7 @@ ok - O aluno adicionou 1 modal dinâmico ao projeto?
                 </div>
             </div>
         </header>
-
+<!-- Carousel Hero -->
         <section id="home-lk" class="container-fluid sct-carousel">
             <div id="carouselcapa" class="carousel slide carousel-fade" data-bs-ride="false">
                 <div class="carousel-indicators button-mood">
@@ -112,21 +109,16 @@ ok - O aluno adicionou 1 modal dinâmico ao projeto?
             </div>
         </section>
 
-
       <main class="container-fluid col-10">
 
-        <div class="flex">
-            <section class="col-6" id="marcas-lk">
-          <div>
-            <h4 class="h4 animate__animated animate__fadeInRightBig">Marcas</h4>
-          </div>
-
-          <div
-            id="carouselMarcas"
-            class="carousel slide"
-            data-interval="false"
-          >
-
+               
+        <section id="marcas-lk">
+          
+            <div>
+            <h4 class="h4 animate__animated animate__fadeInRightBig">Marcas </h4>
+            </div>
+<!-- Carousel Marcas Bootstrapt -->
+            <div id="carouselMarcas" class="carousel slide" data-interval="false">
             <div class="carousel-inner carousel-mod-inner" id="carouselMarcaItems"></div>
             
             <button
@@ -154,93 +146,81 @@ ok - O aluno adicionou 1 modal dinâmico ao projeto?
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+        <!-- Carousel Marcas Slick-->
+         
+        <div class="carouselMarcasSlick" id="carouselMarcasSlick">
+        </div>
+     
+       <!-- Modal Marcas Dinâmico-->
+       <div
+       class="modal fade"
+       id="modalMarcas"
+       tabindex="-1"
+       aria-labelledby="modalMarcaLabel"
+       aria-hidden="true"
+     >
+       <div class="modal-dialog">
+         <div class="modal-content">
+           <div class="modal-header modal-header-mood">
+               <div class="col-12">
+                 <img class="img-mod" id="modalMarcaImg" />
+               </div>
+             </div>
+           <div class="modal-body modal-body-marcas-mood">
+               <div class="col-12">
+                 <h4 id="modalMarcaLabel"></h4>
+                 <p id="modalMarcaDescription"></p>
+                 <ul>
+                   <li><i class="fa-solid fa-person"></i></li>
+                   <li>
+                     Fundador:
+                     <span id="modalMarcaFundador"></span>
+                   </li>
+                   <li><i class="fa-solid fa-calendar-check"></i></li>
+                   <li>
+                     Ano de Fundação:
+                     <span id="modalMarcaAno"></span>
+                   </li>
+                   <li><i class="fa-solid fa-location-dot"></i></li>
+                   <li>
+                     Local:
+                     <span id="modalMarcaLocal"></span>
+                   </li>
+                   <li><i class="fa-solid fa-bicycle"></i></li>
+                   <li>
+                     Especialidade:
+                     <spanp id="modalMarcaEspecialidade"></span>
+                   </li>
+                   <li><i class="fa-solid fa-people-group"></i></li>
+                   <li>
+                     Equipe Patrocinada:
+                     <span id="modalMarcaPatrocinio"></span>
+                   </li>
+                   <li><i class="fa-solid fa-globe"></i></li>
+                   <li>Site: <a id="modalMarcaSite"></a></li>
+                 </ul>
+               </div>
+             </div>
 
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="modalMarcas"
-            tabindex="-1"
-            aria-labelledby="modalMarcaLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header modal-header-mood">
-                    <div class="col-12">
-                      <img class="img-mod" id="modalMarcaImg" />
-                    </div>
-                  </div>
-                <div class="modal-body modal-body-marcas-mood">
-                    <div class="col-12">
-                      <h4 id="modalMarcaLabel"></h4>
-                      <p id="modalMarcaDescription"></p>
-                      <ul>
-                        <li><i class="fa-solid fa-person"></i></li>
-                        <li>
-                          Fundador:
-                          <span id="modalMarcaFundador"></span>
-                        </li>
-                        <li><i class="fa-solid fa-calendar-check"></i></li>
-                        <li>
-                          Ano de Fundação:
-                          <span id="modalMarcaAno"></span>
-                        </li>
-                        <li><i class="fa-solid fa-location-dot"></i></li>
-                        <li>
-                          Local:
-                          <span id="modalMarcaLocal"></span>
-                        </li>
-                        <li><i class="fa-solid fa-bicycle"></i></li>
-                        <li>
-                          Especialidade:
-                          <spanp id="modalMarcaEspecialidade"></span>
-                        </li>
-                        <li><i class="fa-solid fa-people-group"></i></li>
-                        <li>
-                          Equipe Patrocinada:
-                          <span id="modalMarcaPatrocinio"></span>
-                        </li>
-                        <li><i class="fa-solid fa-globe"></i></li>
-                        <li>Site: <a id="modalMarcaSite"></a></li>
-                      </ul>
-                    </div>
-                  </div>
-
-                <div class="modal-footer modal-footer-mood">
-                    <div class="col-9">
-                      <a href="https://www.strava.com/" target="_blank"><i class="fa-brands fa-strava"></i></a>
-                      <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                      <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                      <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                    </div>
-                    <div class="col-3">
-                      <button type="button" class="btn btn-mod" data-bs-dismiss="modal">
-                        Fechar
-                      </button>
-                    </div>
-                  </div>
-              </div>
-            </div>
-          </div>
-
-        </section>
-
-        
+           <div class="modal-footer modal-footer-mood">
+               <div class="col-9">
+                 <a href="https://www.strava.com/" target="_blank"><i class="fa-brands fa-strava"></i></a>
+                 <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                 <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                 <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+               </div>
+               <div class="col-3">
+                 <button type="button" class="btn btn-mod" data-bs-dismiss="modal">
+                   Fechar
+                 </button>
+               </div>
+             </div>
+         </div>
+       </div>
        </div>
 
-       <section class="col-12" id="passeios-lk">
-        <div>
-            <h4 class="h4 animate__animated animate__fadeInRightBig">Passeios</h4>
-        </div>
-
-        <div class="carouselSlick" id="carouselSlick">
-            
-            <!-- inserir divs com javascript -->
-
-        </div>
-
-    </section>
-
+   </section>
+      
         <section id="bicicletas-lk">
             <div>
                 <h4 class="h4 animate__animated animate__fadeInRightBig">Bicicletas</h4>
@@ -372,120 +352,56 @@ ok - O aluno adicionou 1 modal dinâmico ao projeto?
             <div>
                 <h4 class="h4 animate__animated  animate__fadeInRightBig">Competições</h4>
             </div>
-            <div id="competicoes" class="carousel slide" data-interval="false">
-                <div class="carousel-inner">
-                    <ul class="carousel-item active">
-                        <li>
-                            <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalcompet"
-                                href=""><span><img class="img-compet"
-                                        src="./assets/img/competicoes/tour-de-france.jpg"
-                                        alt="Tour de France"></span>
-                                <h4 class="h4compet">Tour de France</h4>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalcompet"
-                                href=""><span><img class="img-compet" src="./assets/img/competicoes/giro-italia.jpg"
-                                        alt="Giro D´Italia"></span>
-                                <h4 class="h4compet">Giro D´Italia</h4>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalcompet"
-                                href=""><span><img class="img-compet" src="./assets/img/competicoes/la-vuelta.jpg"
-                                        alt="La Vuelta"></span>
-                                <h4 class="h4compet">La Vuelta</h4>
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="carousel-item">
-                        <li>
-                            <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalcompet"
-                                href=""><span><img class="img-compet"
-                                        src="./assets/img/competicoes/uci-mtb-jersey.jpg"
-                                        alt="World Cup MTB"></span>
-                                <h4 class="h4compet">World Cup MTB</h4>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalcompet"
-                                href=""><span><img class="img-compet"
-                                        src="./assets/img/competicoes/volta-portugal.jpg"
-                                        alt="Volta a Portugal"></span>
-                                <h4 class="h4compet">Volta a Portugal</h4>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="btn btn-mod" data-bs-toggle="modal" data-bs-target="#Modalcompet"
-                                href=""><span><img class="img-compet"
-                                        src="./assets/img/competicoes/deutshland-tour.jpg"
-                                        alt="Deutshland Tour"></span>
-                                <h4 class="h4compet">Deutshland Tour</h4>
-                            </a>
-                        </li>
-                    </ul>
 
+<!-- Carousel Compet Slick -->
+            <div class="carouselCompets" id="carouselCompets"></div>
+
+          
+<!-- Modal Competições New -->
+            <div class="modal fade" id="modalCompets" tabindex="-1" aria-labelledby="modalCompetLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+              <div class="modal-content">
+                                <div class="modal-header modal-header-mood ">
+                    <h4><i class="fa-solid fa-trophy"></i> <span id="modalCompetCompet"></span></h4>
+                    <h5><i class="fa-solid fa-map-location"></i> <span id="modalCompetLoc"></span></h5>
                 </div>
-                <button class="carousel-control-prev carousel-mod-prev" type="button" data-bs-target="#competicoes"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon icone" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next carousel-mod-next" type="button" data-bs-target="#competicoes"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon icone" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-
-            <!-- Modal Competições -->
-            <div class="modal fade" id="Modalcompet" tabindex="-1" role="dialog" aria-labelledby="Modalcompet"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header modal-header-mood ">
-                            <h4><i class="fa-solid fa-trophy"></i> Competição</h4>
-                            <h5><i class="fa-solid fa-map-location"></i> Local</h5>
-                        </div>
-                        <div class="modal-body">
-                            <div class="col-4">
-                                <img class="img-mod" src="./assets/img/competicoes/tour-de-france.jpg"
-                                    alt="Tour de France">
-                                <h6>Jersey do Campeão</h6>
-                            </div>
-                            <div class="col-8">
-                                <ul>
-                                    <li><i class="fa-solid fa-bicycle"></i></li>
-                                    <li>Categoria: Road Bike</li>
-                                    <li><i class="fa-solid fa-medal"></i></li>
-                                    <li>Edições Realizadas: 110</li>
-                                    <li><i class="fa-solid fa-trophy"></i></li>
-                                    <li>Quantidade de Etapas: 21</li>
-                                    <li><i class="fa-solid fa-map"></i></li>
-                                    <li> <a href="./assets/img/competicoes/tour-de-france-map.jpg" target="_blank">
-                                            <img src="./assets/img/competicoes/tour-de-france-map.jpg"
-                                                alt="Map Tour de France"></a> </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="modal-footer modal-footer-mood">
-                            <div class="col-9">
-                                <a href="https://www.strava.com/" target="_blank"><i
-                                        class="fa-brands fa-strava"></i></a>
-                                <a href="https://www.instagram.com" target="_blank"><i
-                                        class="fa-brands fa-instagram"></i></a>
-                                <a href="https://twitter.com" target="_blank"><i
-                                        class="fa-brands fa-twitter"></i></a>
-                                <a href="https://www.facebook.com" target="_blank"><i
-                                        class="fa-brands fa-facebook-f"></i></a>
-                            </div>
-                            <div class="col-3">
-                                <button type="button" class="btn btn-mod" data-bs-dismiss="modal">Fechar</button>
-                            </div>
-                        </div>
+         
+                <div class="modal-body">
+                    <div class="col-4">
+                        <img class="img-mod" id="modalCompetLabel">
+                        <h6>Jersey do Campeão</h6>
+                    </div>
+                    <div class="col-8">
+                        <ul>
+                            <li><i class="fa-solid fa-bicycle"></i></li>
+                            <li>Categoria: <span id="modalCompetCatego"></span></li>
+                            <li><i class="fa-solid fa-medal"></i></li>
+                            <li>Edições Realizadas: <span id="modalCompetEdicao"></span></li>
+                            <li><i class="fa-solid fa-trophy"></i></li>
+                            <li>Quantidade de Etapas: <span id="modalCompetEtapas"></span></li>
+                            <li><i class="fa-solid fa-map"></i></li>
+                            <li> <a href="./assets/img/competicoes/tour-de-france-map.jpg" target="_blank">
+                                    <img id="modalCompetMapa"></a> </li>
+                        </ul>
                     </div>
                 </div>
+                <div class="modal-footer modal-footer-mood">
+                    <div class="col-9">
+                      <a href="https://www.strava.com/" target="_blank"><i class="fa-brands fa-strava"></i></a>
+                      <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                      <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                      <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                    <div class="col-3">
+                      <button type="button" class="btn btn-mod" data-bs-dismiss="modal">
+                        Fechar
+                      </button>
+                    </div>
+                  </div>
+              </div>
             </div>
+        </div>
+
         </section>
 
         <section id="atletas-lk">
@@ -767,15 +683,12 @@ ok - O aluno adicionou 1 modal dinâmico ao projeto?
                 </div>
             </div>
         </div>
-    </footer>
+      </footer>
 
     </div>
 
     <script src="https://kit.fontawesome.com/ef99a196d2.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script> 
-    <script src="./assets/js/marcas.js"></script>
-    <script src="./assets/js/catalogoMarcas.js"></script>
-    <script src="./assets/js/catalogoEmpresas.js"></script>
     <script src="./assets/libs/slick/slick.min.js"></script>
     <script src="./assets/js/script.js"></script>
 
