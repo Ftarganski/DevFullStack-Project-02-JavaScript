@@ -66,8 +66,7 @@ ok - O aluno adicionou 1 spinner de carregamento ao projeto?
                         </nav>
                     </div>
                     <div class="col-2 nav-login">
-                        <span><a href="https://www.uci.org" target="_blank"><img class="img-uci"
-                                    src="./assets/img/logo-uci.png" alt="Logotipo da UCI"></a></span>
+                        <span><a href="https://www.uci.org" target="_blank"><img class="img-uci" src="./assets/img/logo-uci.png" alt="Logotipo da UCI"></a></span>
                     </div>
                 </div>
             </div>
@@ -109,43 +108,58 @@ ok - O aluno adicionou 1 spinner de carregamento ao projeto?
             </div>
         </section>
 
-      <main class="container-fluid col-10">
+      <main class="container-fluid col-10" >
 
                
         <section id="marcas-lk">
-          
-            <div>
+          <div class="marcasFlex col-12">
+            <div class="col-6">
             <h4 class="h4 animate__animated animate__fadeInRightBig">Marcas </h4>
             </div>
+            <div class="col-6">
+                <h4 class="h4 animate__animated animate__fadeInRightBig">Passeios </h4>
+                </div>
+            </div>
 <!-- Carousel Marcas Bootstrapt -->
-            <div id="carouselMarcas" class="carousel slide" data-interval="false">
-            <div class="carousel-inner carousel-mod-inner" id="carouselMarcaItems"></div>
+
+            <div class="marcasFlex col-12">
             
-            <button
-              class="carousel-control-prev carousel-mod-prev"
-              type="button"
-              data-bs-target="#carouselMarcas"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon icone"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next carousel-mod-next"
-              type="button"
-              data-bs-target="#carouselMarcas"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon icone"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+                <div id="carouselMarcas" class="carousel slide col-6" data-interval="false">
+                <div class="carousel-inner carousel-mod-inner" id="carouselMarcaItems"></div>
+                
+                <button
+                class="carousel-control-prev carousel-mod-prev"
+                type="button"
+                data-bs-target="#carouselMarcas"
+                data-bs-slide="prev"
+                >
+                <span
+                    class="carousel-control-prev-icon icone"
+                    aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                class="carousel-control-next carousel-mod-next"
+                type="button"
+                data-bs-target="#carouselMarcas"
+                data-bs-slide="next"
+                >
+                <span
+                    class="carousel-control-next-icon icone"
+                    aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+
+                </div>
+
+                <iframe  class="col-6 youtube" src="https://www.youtube.com/embed/TKtQ6f0SVq8?controls=0" 
+                allow="accelerometer; autoplay" allowfullscreen>
+                </iframe>
+                       
+            </div>
+
         <!-- Carousel Marcas Slick-->
          
         <div class="carouselMarcasSlick" id="carouselMarcasSlick">
@@ -380,8 +394,11 @@ ok - O aluno adicionou 1 spinner de carregamento ao projeto?
                             <li><i class="fa-solid fa-trophy"></i></li>
                             <li>Quantidade de Etapas: <span id="modalCompetEtapas"></span></li>
                             <li><i class="fa-solid fa-map"></i></li>
-                            <li> <a href="./assets/img/competicoes/tour-de-france-map.jpg" target="_blank">
+                            <li><a href="./assets/img/competicoes/tour-de-france-map.jpg" target="_blank">
                                     <img id="modalCompetMapa"></a> </li>
+                                  
+
+
                         </ul>
                     </div>
                 </div>

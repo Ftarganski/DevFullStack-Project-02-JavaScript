@@ -165,7 +165,7 @@ for (let marca of Object.keys(marcas)) {
 $(".carouselMarcasSlick").slick({
   infinite: true,
   slidesToShow: 3,
-  slidesToScroll: 3
+  slidesToScroll: 3,
 });
 
 // Carousel Slick 2
@@ -212,7 +212,6 @@ for (let empresa of Object.keys(marcas)) {
   carouselMarcas.appendChild(logo);
 }
 
-
 class Compet {
   constructor(compet, loc, catego, edicao, etapas, jersey, mapa, id) {
     this.compet = compet;
@@ -228,65 +227,71 @@ class Compet {
 
 let compets = [
   new Compet(
-  'Tour de France',
-  'França',
-  'Road Bike',
-  '10',
-  '21',
-  'assets/img/competicoes/tour-de-france.jpg',
-  'assets/img/competicoes/tour-de-france-map.jpg',
-  '0'),
-  
+    "Tour de France",
+    "França",
+    "Road Bike",
+    "10",
+    "21",
+    "assets/img/competicoes/tour-de-france.jpg",
+    "assets/img/competicoes/tour-de-france-map.jpg",
+    "0"
+  ),
+
   new Compet(
     `Giro D'Italia`,
-    'Italia',
-    'Road Bike',
-    '9',
-    '13',
-    'assets/img/competicoes/giro-italia.jpg',
-    'assets/img/competicoes/tour-de-france-map.jpg',
-    '1'),
-  
-    new Compet(
-      'La Vuelta',
-      'Espanha',
-      'Road Bike',
-      '18',
-      '16',
-      'assets/img/competicoes/la-vuelta.jpg',
-      'assets/img/competicoes/tour-de-france-map.jpg',
-      '2'),
+    "Italia",
+    "Road Bike",
+    "9",
+    "13",
+    "assets/img/competicoes/giro-italia.jpg",
+    "assets/img/competicoes/tour-de-france-map.jpg",
+    "1"
+  ),
 
-      new Compet(
-        'World Cup MTB',
-        'Variável',
-        'MTB',
-        '23',
-        '6',
-        'assets/img/competicoes/uci-mtb-jersey.jpg',
-        'assets/img/competicoes/tour-de-france-map.jpg',
-        '3'),
+  new Compet(
+    "La Vuelta",
+    "Espanha",
+    "Road Bike",
+    "18",
+    "16",
+    "assets/img/competicoes/la-vuelta.jpg",
+    "assets/img/competicoes/tour-de-france-map.jpg",
+    "2"
+  ),
 
-        new Compet(
-          'Volta a Portugal',
-          'Portugal',
-          'Road Bike',
-          '14',
-          '12',
-          'assets/img/competicoes/volta-portugal.jpg',
-          'assets/img/competicoes/tour-de-france-map.jpg',
-          '4'),
+  new Compet(
+    "World Cup MTB",
+    "Variável",
+    "MTB",
+    "23",
+    "6",
+    "assets/img/competicoes/uci-mtb-jersey.jpg",
+    "assets/img/competicoes/tour-de-france-map.jpg",
+    "3"
+  ),
 
-          new Compet(
-            'Deutshland Tour',
-            'Alemanha',
-            'Road Bike',
-            '17',
-            '25',
-            'assets/img/competicoes/deutshland-tour.jpg',
-            'assets/img/competicoes/tour-de-france-map.jpg',
-            '5'),
-]
+  new Compet(
+    "Volta a Portugal",
+    "Portugal",
+    "Road Bike",
+    "14",
+    "12",
+    "assets/img/competicoes/volta-portugal.jpg",
+    "assets/img/competicoes/tour-de-france-map.jpg",
+    "4"
+  ),
+
+  new Compet(
+    "Deutshland Tour",
+    "Alemanha",
+    "Road Bike",
+    "17",
+    "25",
+    "assets/img/competicoes/deutshland-tour.jpg",
+    "assets/img/competicoes/tour-de-france-map.jpg",
+    "5"
+  ),
+];
 
 const carouselCompeticoes = document.getElementById("carouselCompeticoes");
 const modalCompets = new bootstrap.Modal("#modalCompets", {});
@@ -296,12 +301,11 @@ for (let compet of Object.keys(compets)) {
   camisa.setAttribute("id", compet);
   camisa.innerHTML = `<img class="imgSlickCompets" src="${compets[compet].jersey}">`;
 
-
   camisa.addEventListener("click", function (event) {
     document
       .getElementById("modalCompetLabel")
       .setAttribute("src", compets[event.currentTarget.id]["jersey"]);
-  
+
     document.getElementById("modalCompetCompet").innerHTML =
       compets[event.currentTarget.id]["compet"];
     document.getElementById("modalCompetLoc").innerHTML =
@@ -312,12 +316,11 @@ for (let compet of Object.keys(compets)) {
       compets[event.currentTarget.id]["edicao"];
     document.getElementById("modalCompetEtapas").innerHTML =
       compets[event.currentTarget.id]["etapas"];
-    document.getElementById("modalCompetMapa")
+    document
+      .getElementById("modalCompetMapa")
       .setAttribute("src", compets[event.currentTarget.id]["mapa"]);
-  
-
     modalCompets.show();
   });
-
-  carouselCompets.appendChild(camisa);
+  carouselCompets.appendChild(camisa);  
 }
+
