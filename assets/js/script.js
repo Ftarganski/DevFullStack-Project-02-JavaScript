@@ -7,6 +7,19 @@ setTimeout(function () {
   }
 }, 4000);
 
+//Popovers
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+
+
+//Função Mudar Seta
+let seta = document.getElementsByClassName("slick-prev");
+function Seta() {
+  seta.classList.remove("slick-prev:before");
+  seta.classList.add("carousel-control-prev-icon");
+}
+
 //Catálogo Marcas
 const marcas = {
   bianchi: {
@@ -120,71 +133,17 @@ const marcas = {
 };
 
 const modalMarcas = new bootstrap.Modal("#modalMarcas", {});
-
-//Carousel Bootstrap
 let i = 0;
-const carouselMarcaItems = document.getElementById("carouselMarcaItems");
-for (let marca of Object.keys(marcas)) {
-  let div = document.createElement("div");
-  div.setAttribute("id", marca);
-  div.classList.add("carousel-item", "carousel-mod-item");
-  if (i === 0) {
-    div.classList.add("active");
-  }
-  i++;
-  div.innerHTML = `<span><img class="img-carousel-base" src="${marcas[marca]["img"]}"></span>`;
-
-  div.addEventListener("click", function (event) {
-    document
-      .getElementById("modalMarcaImg")
-      .setAttribute("src", marcas[event.currentTarget.id]["img"]);
-    document.getElementById("modalMarcaLabel").innerHTML =
-      marcas[event.currentTarget.id]["marca"];
-    document.getElementById("modalMarcaDescription").innerHTML =
-      marcas[event.currentTarget.id]["description"];
-    document.getElementById("modalMarcaFundador").innerHTML =
-      marcas[event.currentTarget.id]["fundador"];
-    document.getElementById("modalMarcaAno").innerHTML =
-      marcas[event.currentTarget.id]["ano"];
-    document.getElementById("modalMarcaLocal").innerHTML =
-      marcas[event.currentTarget.id]["local"];
-    document.getElementById("modalMarcaEspecialidade").innerHTML =
-      marcas[event.currentTarget.id]["especialidade"];
-    document.getElementById("modalMarcaPatrocinio").innerHTML =
-      marcas[event.currentTarget.id]["patrocinio"];
-    document.getElementById("modalMarcaSite").innerHTML =
-      marcas[event.currentTarget.id]["site"];
-
-    modalMarcas.show();
-  });
-
-  carouselMarcaItems.appendChild(div);
-}
-
-// Carousel Slick 1
-$(".carouselMarcasSlick").slick({
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 3,
-});
-
-// Carousel Slick 2
-$(".carouselCompets").slick({
-  infinite: true,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-});
-
-//Carousel Slick - problema no layout!!!
 
 const carouselMarcas = document.getElementById("carouselMarcasSlick");
 
+//Gerar Carousel de Marcas
 for (let empresa of Object.keys(marcas)) {
   let logo = document.createElement("span");
   logo.setAttribute("id", empresa);
   logo.innerHTML = `<img class="imgSlickMarcas" src="${marcas[empresa].img}">`;
 
-  //Código para chamar o modal
+//Modal de Marcas
   logo.addEventListener("click", function (event) {
     document
       .getElementById("modalMarcaImg")
@@ -205,13 +164,20 @@ for (let empresa of Object.keys(marcas)) {
       marcas[event.currentTarget.id]["patrocinio"];
     document.getElementById("modalMarcaSite").innerHTML =
       marcas[event.currentTarget.id]["site"];
-
     modalMarcas.show();
   });
 
   carouselMarcas.appendChild(logo);
 }
 
+//Carousel Slick - Marcas
+$(".carouselMarcasSlick").slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+});
+
+//Catálogo de Competições
 class Compet {
   constructor(compet, loc, catego, edicao, etapas, jersey, mapa, id) {
     this.compet = compet;
@@ -236,7 +202,6 @@ let compets = [
     "assets/img/competicoes/tour-de-france-map.jpg",
     "0"
   ),
-
   new Compet(
     `Giro D'Italia`,
     "Italia",
@@ -247,7 +212,6 @@ let compets = [
     "assets/img/competicoes/tour-de-france-map.jpg",
     "1"
   ),
-
   new Compet(
     "La Vuelta",
     "Espanha",
@@ -258,7 +222,6 @@ let compets = [
     "assets/img/competicoes/tour-de-france-map.jpg",
     "2"
   ),
-
   new Compet(
     "World Cup MTB",
     "Variável",
@@ -269,7 +232,6 @@ let compets = [
     "assets/img/competicoes/tour-de-france-map.jpg",
     "3"
   ),
-
   new Compet(
     "Volta a Portugal",
     "Portugal",
@@ -280,7 +242,6 @@ let compets = [
     "assets/img/competicoes/tour-de-france-map.jpg",
     "4"
   ),
-
   new Compet(
     "Deutshland Tour",
     "Alemanha",
@@ -293,19 +254,21 @@ let compets = [
   ),
 ];
 
+
 const carouselCompeticoes = document.getElementById("carouselCompeticoes");
 const modalCompets = new bootstrap.Modal("#modalCompets", {});
 
+//Gerar Carousel de Competições
 for (let compet of Object.keys(compets)) {
   let camisa = document.createElement("span");
   camisa.setAttribute("id", compet);
   camisa.innerHTML = `<img class="imgSlickCompets" src="${compets[compet].jersey}">`;
-
+ 
+  //Modal de Competições
   camisa.addEventListener("click", function (event) {
     document
       .getElementById("modalCompetLabel")
       .setAttribute("src", compets[event.currentTarget.id]["jersey"]);
-
     document.getElementById("modalCompetCompet").innerHTML =
       compets[event.currentTarget.id]["compet"];
     document.getElementById("modalCompetLoc").innerHTML =
@@ -323,4 +286,12 @@ for (let compet of Object.keys(compets)) {
   });
   carouselCompets.appendChild(camisa);  
 }
+
+//Carousel Slick - Competições
+$(".carouselCompets").slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+});
+
 

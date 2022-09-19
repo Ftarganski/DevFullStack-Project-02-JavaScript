@@ -3,16 +3,16 @@ ok - O aluno adicionou ao menos 1 array ou 1 objeto JSON dentro do projeto?
 ok - O aluno adicionou ao menos um tipo de laço de repetição no site?
 ok - O aluno adicionou estrutura condicional no site?
 ok - O aluno adicionou ao menos um evento no site?
-- O aluno criou ao menos 1 classes no projeto?
-- O aluno adicionou ao menos 1 método na classe criada?
-- O aluno adicionou ao menos 1 atributo na classe criada?
-- O aluno instanciou ao menos 2 vezes 1 das classes dentro do projeto?
+ok - O aluno criou ao menos 1 classes no projeto?
+ok - O aluno adicionou ao menos 1 método na classe criada?
+ok - O aluno adicionou ao menos 1 atributo na classe criada?
+ok - O aluno instanciou ao menos 2 vezes 1 das classes dentro do projeto?
 ok - O aluno configurou a biblioteca slick slider dentro do projeto?
 ok - O aluno adicionou 1 carrossel normal dentro do projeto?
 ok - O aluno adicionou 1 carrossel responsivo no projeto?
 ok - O aluno adicionou 1 carrossel dinâmico ao projeto?
 ok - O aluno adicionou 1 modal dinâmico ao projeto?
-- O aluno adicionou 1 popover dinâmico ao projeto?
+ok - O aluno adicionou 1 popover dinâmico ao projeto?
 ok - O aluno adicionou 1 spinner de carregamento ao projeto?
 - O aluno adicionou placeholders ao carregamento dos conteúdos?
 -->
@@ -37,8 +37,8 @@ ok - O aluno adicionou 1 spinner de carregamento ao projeto?
     />
     <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- <link rel="stylesheet" href="./assets/libs/slick/slick-theme.css" type="text/css" /> -->
-    <!-- <link rel="stylesheet" href="./assets/libs/slick/slick.css" type="text/css" /> -->
+    <link rel="stylesheet" href="./assets/libs/slick/slick-theme.css" type="text/css" />
+    <link rel="stylesheet" href="./assets/libs/slick/slick.css" type="text/css" />
   </head>
 
   <body class="bg.dark">
@@ -116,54 +116,11 @@ ok - O aluno adicionou 1 spinner de carregamento ao projeto?
             <div class="col-6">
             <h4 class="h4 animate__animated animate__fadeInRightBig">Marcas </h4>
             </div>
-            <div class="col-6">
-                <h4 class="h4 animate__animated animate__fadeInRightBig">Passeios </h4>
-                </div>
-            </div>
-<!-- Carousel Marcas Bootstrapt -->
-
-            <div class="marcasFlex col-12">
-            
-                <div id="carouselMarcas" class="carousel slide col-6" data-interval="false">
-                <div class="carousel-inner carousel-mod-inner" id="carouselMarcaItems"></div>
-                
-                <button
-                class="carousel-control-prev carousel-mod-prev"
-                type="button"
-                data-bs-target="#carouselMarcas"
-                data-bs-slide="prev"
-                >
-                <span
-                    class="carousel-control-prev-icon icone"
-                    aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-                </button>
-                <button
-                class="carousel-control-next carousel-mod-next"
-                type="button"
-                data-bs-target="#carouselMarcas"
-                data-bs-slide="next"
-                >
-                <span
-                    class="carousel-control-next-icon icone"
-                    aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-                </button>
-
-                </div>
-
-                <iframe  class="col-6 youtube" src="https://www.youtube.com/embed/TKtQ6f0SVq8?controls=0" 
-                allow="accelerometer; autoplay" allowfullscreen>
-                </iframe>
-                       
-            </div>
+         </div>
 
         <!-- Carousel Marcas Slick-->
          
-        <div class="carouselMarcasSlick" id="carouselMarcasSlick">
-        </div>
+        <div class="carouselMarcasSlick" id="carouselMarcasSlick"></div>
      
        <!-- Modal Marcas Dinâmico-->
        <div
@@ -695,8 +652,10 @@ ok - O aluno adicionou 1 spinner de carregamento ao projeto?
                             class="fa-brands fa-facebook-f"></i></a>
                 </div>
                 <div class="col-3 foot-logo">
-                    <span><img class="img-footer" src="./assets/img/logo-branco.png"
-                            alt="Logotipo Pedal Floripa MTB"></span>
+                    <span><a data-toggle="popover"
+                        title="Parabéns, você me encontrou!" 
+                        data-content=""><img class="img-footer" src="./assets/img/logo-branco.png"
+                            alt="Logotipo Pedal Floripa MTB"></a></span>
                 </div>
             </div>
         </div>
@@ -705,7 +664,8 @@ ok - O aluno adicionou 1 spinner de carregamento ao projeto?
     </div>
 
     <script src="https://kit.fontawesome.com/ef99a196d2.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script> 
+    <script src="./assets/libs/bootstrap/popper.min.js"></script>
+    <script src="./assets/libs/bootstrap/bootstrap.bundle.min.js"></script> 
     <script src="./assets/libs/slick/slick.min.js"></script>
     <script src="./assets/js/script.js"></script>
 
