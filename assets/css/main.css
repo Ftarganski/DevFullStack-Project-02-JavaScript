@@ -208,7 +208,7 @@
   text-decoration: none;
 }
 
-.modal-body > .col-8 > ul > li > a > img {
+.modal-body > .col-8 > ul > li > img {
   width: 50%;
 }
 
@@ -287,8 +287,8 @@
   box-sizing: border-box;
 }
 
-.carouselCompets > span:hover,
-.carouselMarcasSlick > span:hover {
+.imgSlickCompets:hover,
+.imgSlickMarcas:hover {
   transform: scale(1.025);
   transition: all 0.5s ease-out;
 }

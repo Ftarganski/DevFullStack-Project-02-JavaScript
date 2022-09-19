@@ -166,40 +166,8 @@ for (let empresa of Object.keys(marcas)) {
       marcas[event.currentTarget.id]["site"];
     modalMarcas.show();
   });
-
   carouselMarcas.appendChild(logo);
 }
-
-//Carousel Slick - Marcas
-$(".carouselMarcasSlick").slick({
-  slidesToShow: 3,
-  slidesToScroll: 3,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
-});
-
-
 
 //Catálogo de Competições
 class Compet {
@@ -220,7 +188,7 @@ let compets = [
     "Tour de France",
     "França",
     "Road Bike",
-    "10",
+    "109",
     "21",
     "assets/img/competicoes/tour-de-france.jpg",
     "assets/img/competicoes/tour-de-france-map.jpg",
@@ -230,54 +198,53 @@ let compets = [
     `Giro D'Italia`,
     "Italia",
     "Road Bike",
-    "9",
-    "13",
+    "105",
+    "21",
     "assets/img/competicoes/giro-italia.jpg",
-    "assets/img/competicoes/tour-de-france-map.jpg",
+    "assets/img/competicoes/giro-italia-map.jpg",
     "1"
   ),
   new Compet(
     "La Vuelta",
     "Espanha",
     "Road Bike",
-    "18",
-    "16",
+    "77",
+    "21",
     "assets/img/competicoes/la-vuelta.jpg",
-    "assets/img/competicoes/tour-de-france-map.jpg",
+    "assets/img/competicoes/la-vuelta-map.jpg",
     "2"
   ),
   new Compet(
     "World Cup MTB",
     "Variável",
     "MTB",
-    "23",
-    "6",
+    "32",
+    "9",
     "assets/img/competicoes/uci-mtb-jersey.jpg",
-    "assets/img/competicoes/tour-de-france-map.jpg",
+    "",
     "3"
   ),
   new Compet(
     "Volta a Portugal",
     "Portugal",
     "Road Bike",
-    "14",
-    "12",
+    "84",
+    "11",
     "assets/img/competicoes/volta-portugal.jpg",
-    "assets/img/competicoes/tour-de-france-map.jpg",
+    "assets/img/competicoes/volta-portugal-map.jpg",
     "4"
   ),
   new Compet(
     "Deutshland Tour",
     "Alemanha",
     "Road Bike",
-    "17",
-    "25",
+    "36",
+    "4",
     "assets/img/competicoes/deutshland-tour.jpg",
-    "assets/img/competicoes/tour-de-france-map.jpg",
+    "assets/img/competicoes/deutshland-tour-map.jpg",
     "5"
   ),
 ];
-
 
 const carouselCompeticoes = document.getElementById("carouselCompeticoes");
 const modalCompets = new bootstrap.Modal("#modalCompets", {});
@@ -311,23 +278,25 @@ for (let compet of Object.keys(compets)) {
   carouselCompets.appendChild(camisa);  
 }
 
-//Carousel Slick - Competições
-$(".carouselCompets").slick({
+//Carousel Slick (Marcas, Competições)
+$(".carouselMarcasSlick, .carouselCompets").slick({
+  autoplay: true,
+  autoplaySpeed: 2000,
   slidesToShow: 3,
-  slidesToScroll: 3,
+  slidesToScroll: 1,
   responsive: [
     {
       breakpoint: 1024,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
       }
     },
     {
       breakpoint: 600,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 1,
       }
     },
     {
@@ -339,5 +308,3 @@ $(".carouselCompets").slick({
     }
   ]
 });
-
-
