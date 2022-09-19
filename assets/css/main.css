@@ -299,12 +299,19 @@
   box-sizing: border-box;
 }
 
-.slick-prev:before, .slick-prev, .slick-arrow{
- color: black!important;
- 
+.slick-prev:before {
+  color: black !important;
+  content: url(../img/bike-prev.svg) !important;
 }
+
 .slick-next:before {
-  color: black!important;
+  color: black !important;
+  content: url(../img/bike.svg) !important;
+}
+
+.slick-prev,
+.slick-next {
+  width: 30px !important;
 }
 
 /* Youtube */
