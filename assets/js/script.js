@@ -145,8 +145,7 @@ for (let empresa of Object.keys(marcas)) {
 
 //Modal de Marcas
   logo.addEventListener("click", function (event) {
-    document
-      .getElementById("modalMarcaImg")
+    document.getElementById("modalMarcaImg")
       .setAttribute("src", marcas[event.currentTarget.id]["img"]);
     document.getElementById("modalMarcaLabel").innerHTML =
       marcas[event.currentTarget.id]["marca"];
