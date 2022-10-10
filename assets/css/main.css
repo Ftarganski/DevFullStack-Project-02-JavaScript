@@ -267,6 +267,10 @@
   justify-content: space-between;
 }
 
+.carouselMarcasSlick:hover {
+  cursor: pointer;
+}
+
 .imgSlickMarcas {
   width: 100%;
   margin: 0;
@@ -278,6 +282,10 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.carouselCompets:hover {
+  cursor: pointer;
 }
 
 .imgSlickCompets {
